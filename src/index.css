@@ -1,0 +1,25 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+	font-family: 'Noto Serif', serif;
+	overflow-y: scroll;
+}
+
+.wrapper {
+	padding-bottom: 80px;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.filter_wrapper {
+	box-shadow: 25px 25px 25px #f0f0f0;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: auto 280px;
+}

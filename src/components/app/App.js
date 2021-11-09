@@ -3,6 +3,7 @@ import Header from "../header/Header";
 import Filter from "../filter/Filter";
 import NewsList from "../newsList/NewsList";
 import Converter from "../converter/converter";
+import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
 
 class App extends Component {
 
@@ -41,13 +42,17 @@ class App extends Component {
                 <div className='container'>
                     <main className='content'>
                         <div>
-                            <NewsList 
-                                category={this.state.category}
-                                country={this.state.country}/>
+                            <ErrorBoundary>
+                                <NewsList 
+                                    category={this.state.category}
+                                    country={this.state.country}/>
+                            </ErrorBoundary>
                         </div>
 
                         <div>
-                            <Converter />
+                            <ErrorBoundary>
+                                <Converter />
+                            </ErrorBoundary>
                         </div>
                     </main>
                 </div>

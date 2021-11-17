@@ -49,7 +49,7 @@ class App extends Component {
                             </ErrorBoundary>
                         </div>
 
-                        <div>
+                        <div className='converter'>
                             <ErrorBoundary>
                                 <Converter />
                             </ErrorBoundary>
